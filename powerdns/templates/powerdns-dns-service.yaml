@@ -7,6 +7,9 @@ metadata:
 {{ include "powerdns.labels" . | indent 4 }}
 spec:
   type: {{ .Values.powerdns.service.dns.type }}
+  {{- if .Values.powerdns.service.dns.loadBalancerIP }}
+  loadBalancerIP: {{ .Values.powerdns.service.dns.loadBalancerIP }}
+  {{- end }}
   ports:
     - port: {{ .Values.powerdns.service.dns.port }}
       targetPort: dns
