@@ -79,6 +79,7 @@ powerdnsadmin:
     class: "traefik"
     path: "/"
     hostname: "powerdns-admin"
+    annotations: {}
   requests:
     memory: "512Mi"
     cpu: "300m"

@@ -114,6 +114,7 @@ The following table lists the configurable parameters of the PowerDNS chart and 
 | `powerdnsadmin.ingress.class`          | Class of Ingress                            | `traefik`                                                                        |
 | `powerdnsadmin.ingress.hostname`       | Hostname without domain part                | `powerdns-admin`                                                                 |
 | `powerdnsadmin.ingress.path`           | Path within the url structure               | `/`                                                                              |
+| `powerdnsadmin.ingress.annotations`    | Additional Ingress annotations              | `{}`                                                                             |
 
 The above parameters map to the env variables defined in each container. For more information please refer to each image documentation.
 
