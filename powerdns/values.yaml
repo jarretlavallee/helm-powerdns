@@ -9,10 +9,12 @@ powerdns:
       type: LoadBalancer
       port: 53
       # loadBalancerIP: Optional
+      annotations: {}
     api:
       type: ClusterIP
       port: 8081
       # loadBalancerIP: Optional
+      annotations: {}
   image:
     repository: pschiffe/pdns-mysql
     tag: alpine
@@ -61,6 +63,7 @@ powerdnsadmin:
     type: LoadBalancer
     port: 9191
     # loadBalancerIP: Optional
+    annotations: {}
   image:
     repository: aescanero/powerdns-admin
     tag: latest

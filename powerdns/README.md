@@ -58,9 +58,11 @@ The following table lists the configurable parameters of the PowerDNS chart and 
 | `powerdns.service.dns.type`            | Class of the Kubernetes DNS Service         | `LoadBalancer`                                                                   |
 | `powerdns.service.dns.port`            | Port of the DNS Service                     | `53`                                                                             |
 | `powerdns.service.dns.loadBalancerIP`  | Optional LoadBalancerIP                     | `nil`                                                                            |
+| `powerdns.service.dns.annotations`     | Service annotations                         | `{}`                                                                             |
 | `powerdns.service.api.type`            | Class of the Kubernetes PowerDNSAPI Service | `ClusterIP`                                                                      |
 | `powerdns.service.api.port`            | Port of the DNS Service                     | `53`                                                                             |
 | `powerdns.service.api.loadBalancerIP`  | Optional LoadBalancerIP                     | `nil`                                                                            |
+| `powerdns.service.api.annotations`     | Service annotations                         | `{}`                                                                             |
 | `powerdns.image.repository`            | PowerDNS image name                         | `pschiffe/pdns-mysql`                                                            |
 | `powerdns.image.tag`                   | PowerDNS image tag                          | `alpine`                                                                         |
 | `powerdns.image.pullPolicy`            | Image pull policy                           | `IfNotPresent`                                                                   |
@@ -96,6 +98,7 @@ The following table lists the configurable parameters of the PowerDNS chart and 
 | `powerdnsadmin.service.type`           | Class of Kubernetes PowerDNS-Admin Service  | `LoadBalancer`                                                                   |
 | `powerdnsadmin.service.port`           | Port of the PowerDNS-Admin Service          | `9191`                                                                           |
 | `powerdnsadmin.service.loadBalancerIP` | Optional LoadBalancerIP                     | `nil`                                                                            |
+| `powerdnsadmin.service.annotations`    | Service annotations                         | `{}`                                                                             |
 | `powerdnsadmin.image.repository`       | PowerDNS-Admin image name                   | `aescanero/powerdns-admin`                                                       |
 | `powerdnsadmin.image.tag`              | PowerDNS-Admin image tag                    | `latest`                                                                         |
 | `powerdnsadmin.image.pullPolicy`       | Image pull policy                           | `IfNotPresent`                                                                   |

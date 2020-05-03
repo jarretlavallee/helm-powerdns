@@ -5,6 +5,10 @@ metadata:
   name: {{ template "powerdns.fullname" . }}-service-api
   labels:
 {{ include "powerdns.labels" . | indent 4 }}
+{{- with .Values.powerdns.service.api.annotations }}
+  annotations:
+{{ toYaml . | indent 4 }}
+{{- end }}
 spec:
   type: {{ .Values.powerdns.service.api.type }}
   {{- if .Values.powerdns.service.api.loadBalancerIP }}
