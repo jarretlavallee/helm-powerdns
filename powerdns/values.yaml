@@ -38,6 +38,7 @@ powerdns:
   limits:
     memory: "512Mi"
     cpu: "300m"
+    # extraVars: []
 
 mariadb:
   enabled: true

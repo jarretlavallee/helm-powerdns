@@ -82,6 +82,7 @@ The following table lists the configurable parameters of the PowerDNS chart and 
 | `powerdns.mysql_rootpass`              | Password of the root user of external BD    | `nil`                                                                            |
 | `powerdns.mysql_pass`                  | Password of the user                        | `nil`                                                                            |
 | `powerdns.resources`                   | CPU/Memory resource requests/limits         | Memory: `512Mi`, CPU: `300m`                                                     |
+| `powerdns.extraVars`                   | Extra variables to pass into the container  | `[]`                                                                             |
 | `mariadb.enabled`                      | Deploy the Database packaged with Helm      | `true`                                                                           |
 | `mariadb.image.repository`             | MariaDB image name                          | `mariadb`                                                                        |
 | `mariadb.image.tag`                    | MariaDB image tag                           | `latest`                                                                         |
